@@ -1,19 +1,20 @@
-public class Anunciante {
-    public int numeroAnuncios;
+public class Anunciante extends Cliente {
+    private int numAnuncios;
 
-    public Anunciante(){
-
+    public Anunciante() {
+        super();
     }
 
-    public Anunciante(String identificador, String contraseña, double descuento, int numeroAnuncios) {
-        this.numeroAnuncios = numeroAnuncios;
+    public Anunciante(String identificador, String contraseña, double descuento, int numAnuncios) {
+        super(identificador, contraseña, descuento);
+        this.numAnuncios = numAnuncios;
     }
 
-    public int getNumeroAnuncios() {
-        return numeroAnuncios;
+    public int getNumAnuncios() {
+        return numAnuncios;
     }
 
-    public void setNumeroAnuncios(int numeroAnuncios) {
-        this.numeroAnuncios = numeroAnuncios;
+    public void setNumAnuncios(int numAnuncios) {
+        this.numAnuncios = numAnuncios;
     }
 }

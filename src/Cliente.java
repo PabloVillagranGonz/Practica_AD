@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Cliente {
     public String identificador;
     public String contraseña;
@@ -36,5 +34,14 @@ public class Cliente {
 
     public void setDescuentos(double descuentos) {
         this.descuentos = descuentos;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "identificador='" + identificador + '\'' +
+                ", contraseña='" + contraseña + '\'' +
+                ", descuentos=" + descuentos +
+                '}';
     }
 }

@@ -1,10 +1,12 @@
-public class Usuario {
-    public boolean premium;
+public class Usuario extends Cliente {
+    private boolean premium;
 
-    public Usuario (){
-
+    public Usuario() {
+        super();
     }
-    public Usuario(boolean premium) {
+
+    public Usuario(String identificador, String contraseña, double descuento, boolean premium) {
+        super(identificador, contraseña, descuento);
         this.premium = premium;
     }
 
