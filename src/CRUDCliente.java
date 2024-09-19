@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Registro {
+public class CRUDCliente {
     private ArrayList<Cliente> listaClientes;
 
-    public Registro() {
+    public CRUDCliente() {
         listaClientes = new ArrayList<>();
     }
 

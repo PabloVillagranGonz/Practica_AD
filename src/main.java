@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class main {
-    public static void anadirUsuario(Scanner teclado, Registro registro){
+    public static void anadirUsuario(Scanner teclado, CRUDCliente registro){
         String identificador, contraseña;
         double descuento;
         boolean premium;
@@ -19,7 +19,7 @@ public class main {
         registro.añadirCliente(usuario);
         System.out.println("Usuario añadido");
     }
-    public static void buscarCliente(Scanner scanner, Registro registro) {
+    public static void buscarCliente(Scanner scanner, CRUDCliente registro) {
         System.out.print("Introduce el identificador (correo): ");
         String identificador = scanner.next();
         Cliente cliente = registro.buscarCliente(identificador);
@@ -30,7 +30,7 @@ public class main {
             System.out.println("Cliente no encontrado.");
         }
     }
-    public static void calcularIngresos(Registro registro) {
+    public static void calcularIngresos(CRUDCliente registro) {
         double ingresosTotales = registro.calcularIngresos();
         System.out.println("Los ingresos totales son: " + ingresosTotales + " euros.");
     }
@@ -39,7 +39,7 @@ public class main {
         Scanner teclado = new Scanner(System.in);
         String opcion;
 
-        Registro registro = new Registro();
+        CRUDCliente registro = new CRUDCliente();
         try {
             do {
                 System.out.println("Elige opción:\n" +
