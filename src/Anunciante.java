@@ -1,5 +1,5 @@
 public class Anunciante extends Cliente {
-    private int numAnuncios;
+    public int numAnuncios;
 
     public Anunciante() {
         super();

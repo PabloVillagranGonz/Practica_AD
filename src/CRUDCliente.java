@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class CRUDCliente {
-    private ArrayList<Cliente> listaClientes;
+    public ArrayList<Cliente> listaClientes;
 
     public CRUDCliente() {
         listaClientes = new ArrayList<>();

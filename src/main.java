@@ -19,6 +19,7 @@ public class main {
         registro.añadirCliente(usuario);
         System.out.println("Usuario añadido");
     }
+
     public static void buscarCliente(Scanner scanner, CRUDCliente registro) {
         System.out.print("Introduce el identificador (correo): ");
         String identificador = scanner.next();
@@ -30,9 +31,10 @@ public class main {
             System.out.println("Cliente no encontrado.");
         }
     }
+
     public static void calcularIngresos(CRUDCliente registro) {
         double ingresosTotales = registro.calcularIngresos();
-        System.out.println("Los ingresos totales son: " + ingresosTotales + " euros.");
+        System.out.println("Los ingresos totales son: " + ingresosTotales + " €.");
     }
 
     public static void main(String[] args) {
@@ -59,7 +61,6 @@ public class main {
                     case "3":
                         calcularIngresos(registro);
                         break;
-
                     case "0":
                         System.out.println("Saliendo...");
                         break;

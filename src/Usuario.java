@@ -1,5 +1,5 @@
 public class Usuario extends Cliente {
-    private boolean premium;
+    public boolean premium;
 
     public Usuario() {
         super();
